@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--suite.xml是标准的xml文件-->
+<!--
+SuiteConfig标签对所有类都有效
+-->
+<suite name="test">
+
+    <test name="login">
+        <classes>
+            <class name="com.course.testng.suite.SuiteConfig"></class>
+            <class name="com.course.testng.suite.LoginTest"></class>
+        </classes>
+    </test>
+    <test name="pay">
+        <classes>
+            <class name="com.course.testng.suite.SuiteConfig"></class>
+            <class name="com.course.testng.suite.PayTest"></class>
+        </classes>
+    </test>
+</suite>

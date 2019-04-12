@@ -1,1 +1,39 @@
 接口自动化测试框架知识总结
+
+testNG框架的使用
+@Test 将方法标记为测试的一部分
+@BeforeMethod 在每一个方法运行之前运行
+@AfterMethod 在每一个方法运行之后运行
+@BeforeClass 在类之前运行
+@AfterClass 在类之后运行
+@BeforeSuite 运行类之前先运行Suite 表示Class是属于某个套件的
+@AfterSuite
+ 套件测试 BeforeSuite AfterSuite
+ 套件测试中的SuiteConfig所有标签对于所有类都有效
+
+ 忽略测试：本次取消测试 @Test(enabled = false) test注解中enabled属性默认是true
+
+ 方法分组测试 test中groups属性和AfterGroups 、BeforeGroups
+
+ 类分组测试 在类上添加注解test和属性groups 然后在xml文件中的tset中添加groups属性的run include
+
+ 异常测试 Test中属性expectedExceptions
+
+ 依赖测试 测试的时候一般要减少依赖测试 执行依赖方法 被依赖方法也会被执行 如果被依赖测试执行失败 那么会忽略执行
+
+ 参数化测试xml 以xml文件执行参数化测试 添加parameter元素进行实现参数化
+
+ 参数化测试 DataProvider注解 和 Test中dataProvide的属性 以及DataProvider可以和反射Method进行联系
+  通过方法名提供想不同的参数源
+
+ 多线程测试
+  注解方式执行：invocationCount表示执行次数 threadPoolSize表示线程池内线程的个数
+  xml文件执行：
+   method 方法的不同
+   classes class的不同
+   tests test的不同
+   thread-count 线程数
+   parallel 表示线程级别
+
+  超时测试
+   Test注解中timeout属性就是最长的执行时间 当执行时间超过一定时间 就会报错
