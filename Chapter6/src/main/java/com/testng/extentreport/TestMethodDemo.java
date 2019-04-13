@@ -7,11 +7,11 @@ import org.testng.annotations.Test;
 public class TestMethodDemo {
     @Test
     public void test01(){
-        Assert.assertEquals(1,2);
+        Assert.assertEquals(2,2);
     }
     @Test
     public void test02(){
-        Assert.assertEquals(2,2);
+        Assert.assertEquals(3,2);
     }
     @Test
     public void test03(){
