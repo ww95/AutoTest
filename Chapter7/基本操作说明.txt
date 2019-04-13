@@ -1,0 +1,21 @@
+启动 java -jar jar包名 http -p 端口号 -c moco框架配置文件.json
+moco响应乱码  "headers":{
+                 "Content-Type":"text/html;charset=gbk"
+               }
+
+moco框架带参数的请求
+  带参数的get请求在request中添加queries属性
+
+  带参数的post请求在request中添加forms属性
+
+moco框架的cookie分为get和post
+  get请求:添加cookies属性以及相关属性值
+  post请求:添加cookie属性以及属性值
+  另外 还可以在请求中添加json格式数据进行传输
+
+moco框架添加header
+     "content-type": "application/json"
+     表示数据已json格式进行传输 不能用queries和forms
+
+moco框架实现重定向
+  添加redirectTo属性以及相应的属性值
