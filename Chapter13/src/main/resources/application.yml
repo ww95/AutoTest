@@ -1,0 +1,19 @@
+server:
+  port: 1212
+logging:
+  path: logs
+  file: userManager.log
+
+spring:
+  application:
+    name: wangwei
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/course?useUnicode=true&charset=utf-8
+    username: root
+    password: root
+
+mybatis:
+  type-aliases-package: com.course.bean
+  mapper-locations:
+    - mapper/*

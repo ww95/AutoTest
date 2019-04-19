@@ -1,0 +1,5 @@
+HttpClient框架使用说明
+ 返回一个cookie的请求 不管是get和post请求
+ 返回cookie信息就是在response中添加cookies属性以及属性值
+
+获取Cookie信息

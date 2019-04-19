@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">-->
+<!--在testng文件之中写入用例相关用例-->
+<suite name="用户管理测试套件">
+    <test name="用户管理测试用例">
+        <classes>
+            <class name="com.course.ceses.LoginTest">
+                <methods>
+                    <include name="loginTrue"></include>
+                    <include name="loginFalse"></include>
+                </methods>
+            </class>
+            <class name="com.course.ceses.GetUserInfoTest">
+                <methods>
+                    <include name="getUserInfo"></include>
+                </methods>
+            </class>
+            <class name="com.course.ceses.GetUserListTest">
+                <methods>
+                    <include name="getUserList"></include>
+                </methods>
+            </class>
+            <class name="com.course.ceses.UpdateUserInfoTest">
+                <methods>
+                    <include name="updateUserInfo"></include>
+                    <include name="deleteUserInfo"></include>
+                </methods>
+            </class>
+            <class name="com.course.ceses.AddUserTest">
+                <methods>
+                    <include name="addUser"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.course.config.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>

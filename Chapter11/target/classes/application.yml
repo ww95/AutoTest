@@ -1,0 +1,21 @@
+#这是端口号
+server:
+  port: 1212
+#这是日志配置
+logging:
+  path: logs
+  file: mylog.log
+#这是spring相关配置
+spring:
+  application:
+    name: myAutoTest
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/course?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+#    这是mybatis相关的配置
+mybatis:
+  type-aliases-package: com.course.bean
+  mapper-locations:
+    - /mapper/*

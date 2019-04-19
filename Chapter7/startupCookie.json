@@ -37,4 +37,21 @@
         "Content-Type":"text/html;charset=gbk"
       }
     }
-  }]
+  },
+  {
+    "description": "这是一个会返回cookie信息的请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "true"
+      },
+      "text": "恭喜获取cookie信息成功",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  }
+]
